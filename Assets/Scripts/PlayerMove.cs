@@ -17,10 +17,12 @@ public class PlayerMove : MonoBehaviour
     public float jumpTime = 0.2f; // time the player's jump can be held before character comes back down
     public float jumpTimeCounter; // counts how long the jump has left
     private bool isJumping;
+    private Animator anim; // cat animations
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         playerRb= GetComponent<Rigidbody2D>();
     }
 
@@ -45,9 +47,20 @@ public class PlayerMove : MonoBehaviour
         // player jumping, checks to also see if the jump button is pressed, initates the jump
         if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
+            anim.SetTrigger("takeOf"); // animation
             isJumping = true;
             jumpTimeCounter = jumpTime; // timer gets reset with every jump
             playerRb.velocity = Vector2.up * jumpForce;
+        }
+
+        if (isGrounded == true)
+        {
+            anim.SetBool("isJumping", false);
+        }
+
+        else
+        {
+            anim.SetBool("isJumping", true);
         }
 
         // if the jump button is to be held down
@@ -68,6 +81,16 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
+        }
+
+        // animation
+        if (input == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
         }
     }
 

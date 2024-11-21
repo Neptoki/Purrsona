@@ -1165,6 +1165,7 @@ GameObject:
   - component: {fileID: 1904872533}
   - component: {fileID: 1904872534}
   - component: {fileID: 1904872535}
+  - component: {fileID: 1904872536}
   m_Layer: 0
   m_Name: PlayerCat
   m_TagString: Untagged
@@ -1359,6 +1360,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11113733, y: 0.071260974}
   m_EdgeRadius: 0
+--- !u!114 &1904872536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904872529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d886b0eadbd70f4f84e88dd4895fbf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1912362825
 GameObject:
   m_ObjectHideFlags: 0
