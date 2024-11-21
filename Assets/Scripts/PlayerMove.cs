@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     public Rigidbody2D playerRb;
     public SpriteRenderer spriteRenderer;
+    public float jumpForce;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +32,16 @@ public class PlayerMove : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
+        // player jumping, checks to also see if the jump button is pressed
+        if (Input.GetButton("Jump"))
+        {
+            playerRb.velocity = Vector2.up * jumpForce;
+        }
+
     }
 
     void FixedUpdate()
     {
-        playerRb.velocity = new Vector2 (input * speed, playerRb.velocity.y);
+        playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
     }
 }

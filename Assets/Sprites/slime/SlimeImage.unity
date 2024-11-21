@@ -966,9 +966,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movSpeed: 10
   input: 0
-  speed: 0
+  speed: 5
   playerRb: {fileID: 1904872534}
   spriteRenderer: {fileID: 1904872531}
+  jumpForce: 5
 --- !u!50 &1904872534
 Rigidbody2D:
   serializedVersion: 4
@@ -984,7 +985,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
