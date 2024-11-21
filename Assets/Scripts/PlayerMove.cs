@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
-
     public float movSpeed;
-    float speedX, speedY;
-    Rigidbody2D rb;
+    public float input;
+    public float speed;
+    public Rigidbody2D playerRb;
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb= GetComponent<Rigidbody2D>();
+        playerRb= GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * movSpeed;
-        rb.velocity = new Vector2 (speedX, speedY);
+        input = Input.GetAxisRaw("Horizontal");
+
+        // if player is facing left, right, etc, then flip the sprite
+        if (input < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (input > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+        playerRb.velocity = new Vector2 (input * speed, playerRb.velocity.y);
     }
 }
