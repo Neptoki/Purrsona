@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1765777410934133764}
   - component: {fileID: 966871682373958211}
   - component: {fileID: 3581069566044304010}
+  - component: {fileID: 6987844875978681323}
   m_Layer: 6
   m_Name: grass_0
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2337864082047775472}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.8465, y: -4.48, z: -0.006351471}
   m_LocalScale: {x: 3.26, y: 3.26, z: 3.26}
   m_ConstrainProportionsScale: 1
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -703934197, guid: a9a18f5261a52594a992c75fc68f6288, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -115,9 +116,9 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000009536743, y: -0.022836328}
+  m_Offset: {x: 0.0000009536743, y: 0.11650494}
   m_SpriteTilingProperty:
     border: {x: 0.01, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,5 +129,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28.593992, y: 0.33567262}
+  m_Size: {x: 28.593992, y: 0.056990087}
   m_EdgeRadius: 0
+--- !u!251 &6987844875978681323
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337864082047775472}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1

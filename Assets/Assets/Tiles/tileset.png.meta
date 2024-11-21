@@ -172,6 +172,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: grassfill_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e5ea4c0a3a89d4eaefd31a4375e8d4
+      internalID: 542220976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassfill_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 33
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4f2c78dbe0bc24d80d8eb77aa95f1a
+      internalID: 978122288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dbea6a6a1d5f741b317b2ccf9b66dd
+      internalID: -373347458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +247,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       grass_0: -703934197
+      grassfill_0: 542220976
+      grassfill_1: 978122288
       island_0: 1388233590
+      island_1: -373347458
       rock_0: 1936486839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
