@@ -40,7 +40,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // check if player is on ground before allowed to jump again
-        isGrounded = Physics2D.OverlapCircle(pawsPosition.position, groundCheckCircle, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(pawsPosition.position, groundCheck , groundLayer);
 
         // player jumping, checks to also see if the jump button is pressed, initates the jump
         if (isGrounded == true && Input.GetButtonDown("Jump"))
