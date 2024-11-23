@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         input = Input.GetAxisRaw("Horizontal");
+        anim.SetBool("isWalking", input != 0); // if input is zero, for animation
 
         // if player is facing left, right, etc, then flip the sprite
         if (input < 0)
@@ -43,14 +44,15 @@ public class PlayerMove : MonoBehaviour
 
         // check if player is on ground before allowed to jump again
         isGrounded = Physics2D.OverlapCircle(pawsPosition.position, groundCheckCircle, groundLayer);
+        anim.SetBool("isGrounded", isGrounded); // parameter for animation
 
         // player jumping, checks to also see if the jump button is pressed, initates the jump
         if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
-            anim.SetTrigger("takeOf"); // animation
             isJumping = true;
             jumpTimeCounter = jumpTime; // timer gets reset with every jump
             playerRb.velocity = Vector2.up * jumpForce;
+            anim.SetBool("isJumping", true); // starts jump animation
         }
 
         if (isGrounded == true)
@@ -83,15 +85,14 @@ public class PlayerMove : MonoBehaviour
             isJumping = false;
         }
 
+        if (isGrounded)
+        {
+            anim.SetBool("isJumping", false); // stops animation when grounded
+        }
+
         // animation
-        if (input == 0)
-        {
-            anim.SetBool("isRunning", false);
-        }
-        else
-        {
-            anim.SetBool("isRunning", true);
-        }
+        anim.SetBool("isInAir", !isGrounded && !isJumping); // when not grounded and jumping
+
     }
 
     void FixedUpdate()
