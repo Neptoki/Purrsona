@@ -18,6 +18,11 @@ public class PlayerMove : MonoBehaviour
     public float jumpTimeCounter; // counts how long the jump has left
     private bool isJumping;
     private Animator anim; // cat animations
+    private float idleTime = 0f; // player idle
+    private bool isSpecialIdleTriggered = false; // special anim played?
+    public float idleThreshold = 5f; // special anim plays
+    public int numberOfIdleVariants = 2; // total anim variants
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +58,7 @@ public class PlayerMove : MonoBehaviour
             jumpTimeCounter = jumpTime; // timer gets reset with every jump
             playerRb.velocity = Vector2.up * jumpForce;
             anim.SetBool("isJumping", true); // starts jump animation
+            ResetSpecialIdle(); // stops idle when jumping
         }
 
         if (isGrounded == true)
@@ -93,10 +99,46 @@ public class PlayerMove : MonoBehaviour
         // animation
         anim.SetBool("isInAir", !isGrounded && !isJumping); // when not grounded and jumping
 
+        if (input == 0 && isGrounded) // is idle and grounded
+        {
+            idleTime += Time.deltaTime; // idle timer
+
+            if (idleTime >= idleThreshold && !isSpecialIdleTriggered)
+            {
+                int randomVariant = Random.Range(1, numberOfIdleVariants + 1); // randoms
+                anim.SetInteger("idleVariant", randomVariant); // variant
+                anim.SetTrigger("specialIdle"); // special idle animation
+                isSpecialIdleTriggered = true; // not repeatedly triggered
+            }
+        }
+        else
+        {
+            // resets idle
+            ResetSpecialIdle();
+        }
+
+        if (isSpecialIdleTriggered && anim.GetCurrentAnimatorStateInfo(0).IsTag("SpecialIdle")) // resets again
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f) // complete
+            {
+                idleTime = 0f;
+                isSpecialIdleTriggered = false;
+            }
+        }
     }
 
     void FixedUpdate()
     {
         playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
+    }
+
+    void ResetSpecialIdle() // for idle anims
+    {
+        if (isSpecialIdleTriggered)
+        {
+            anim.ResetTrigger("specialIdle"); // trigger
+            idleTime = 0f;
+            isSpecialIdleTriggered = false;
+        }
     }
 }
