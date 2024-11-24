@@ -794,7 +794,6 @@ GameObject:
   m_Component:
   - component: {fileID: 717629763}
   - component: {fileID: 717629764}
-  - component: {fileID: 717629765}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -845,41 +844,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &717629765
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717629762}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.6467545, y: -0.03163757}
-  m_Size: {x: 0.6676827, y: 0.6676827}
-  m_Direction: 1
 --- !u!1 &731436314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,6 +1432,7 @@ GameObject:
   - component: {fileID: 1448579142}
   - component: {fileID: 1448579141}
   - component: {fileID: 1448579143}
+  - component: {fileID: 1448579144}
   m_Layer: 0
   m_Name: Slime Sprite
   m_TagString: Untagged
@@ -1577,6 +1542,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   playerHealth: {fileID: 1904872537}
+--- !u!70 &1448579144
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448579137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0006646725, y: -0.024849212}
+  m_Size: {x: 0.105424576, y: 0.100543596}
+  m_Direction: 1
 --- !u!1 &1545808268
 GameObject:
   m_ObjectHideFlags: 0
