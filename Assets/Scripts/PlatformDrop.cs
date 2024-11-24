@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PlatformDrop : MonoBehaviour
 {
+    private BoxCollider2D boxCollider2D;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        boxCollider2D = GetComponent<BoxCollider2D>();
+
+        if (boxCollider2D == null)
+        {
+            Debug.LogError("No BoxCollider2D attached to this GameObject!");
+        }
     }
 
     // Update is called once per frame
@@ -16,15 +23,21 @@ public class PlatformDrop : MonoBehaviour
         // lets player fall down ground
         if (Input.GetKeyDown(KeyCode.S))
         {
-            StartCoroutine(FallTimer());
+            if (boxCollider2D != null)
+            {
+                StartCoroutine(FallTimer());
+            }
         }
     }
 
     // similar to normal functions, disables player collider, pauses the code, then turns the collider back on
     IEnumerator FallTimer()
     {
-        GetComponent<BoxCollider2D>().enabled = false;
-        yield return new WaitForSeconds(0.15f);
-        GetComponent<BoxCollider2D>().enabled = true;
+        if (boxCollider2D != null)
+        {
+            boxCollider2D.enabled = false;
+            yield return new WaitForSeconds(0.15f);
+            boxCollider2D.enabled = true;
+        }
     }
 }

@@ -18,9 +18,13 @@ public class EnemySquash : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.tag == "Weak Point")
+        if (collision.collider.CompareTag("Weak Point"))
         {
-            Destroy(collision.gameObject);
+            GameObject enemy = collision.collider.transform.parent?.gameObject;
+            if (enemy != null && enemy.CompareTag("Enemy"))
+            {
+                Destroy(enemy);
+            }
         }
     }
 }
