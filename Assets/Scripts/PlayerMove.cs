@@ -22,7 +22,10 @@ public class PlayerMove : MonoBehaviour
     private bool isSpecialIdleTriggered = false; // special anim played?
     public float idleThreshold = 5f; // special anim plays
     public int numberOfIdleVariants = 2; // total anim variants
-
+    public float KBCounter; // KB = 'knocknack'
+    public float KBForce;
+    public float KBTotalTime;
+    public bool KnockFromRight; // direction player has been hit
 
     // Start is called before the first frame update
     void Start()
@@ -129,8 +132,24 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
-    }
+        if(KBCounter <=0)
+        {
+            playerRb.velocity = new Vector2(input * speed, playerRb.velocity.y);
+        }
+        else
+        {
+            if(KnockFromRight == true)
+            {
+                playerRb.velocity = new Vector2(-KBForce, KBForce);
+            }   
+            if (KnockFromRight == false)
+            {
+                playerRb.velocity = new Vector2(KBForce, KBForce); // sends player right
+            }
+
+            KBCounter -= Time.deltaTime;    
+        }
+    }   
 
     void ResetSpecialIdle() // for idle anims
     {

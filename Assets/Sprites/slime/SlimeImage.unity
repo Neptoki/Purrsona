@@ -1884,6 +1884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   playerHealth: {fileID: 1904872537}
+  playerMovement: {fileID: 1904872533}
 --- !u!70 &1448579144
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2541,6 +2542,10 @@ MonoBehaviour:
   jumpTimeCounter: 0
   idleThreshold: 5
   numberOfIdleVariants: 2
+  KBCounter: 0
+  KBForce: 6
+  KBTotalTime: 0.2
+  KnockFromRight: 0
 --- !u!50 &1904872534
 Rigidbody2D:
   serializedVersion: 4
