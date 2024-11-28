@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 9;
     public int health;
+    public GameOverScreen GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -13,18 +14,23 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         if(health <= 0)
         {
+            health = 0;
             Destroy(gameObject);
+            GameOver();
+        }
+    }
+
+    public void GameOver()
+    {
+        if (GameOverScreen != null)
+        {
+            GameOverScreen.Setup(true);
+
         }
     }
 }
