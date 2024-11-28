@@ -1,20 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System; 
 
-public class Coin : UICollectible
+public class Coin : MonoBehaviour, UICollectible
 {
-
-    public override void Collect()
-    // Start is called before the first frame update
-    void Start()
+    public static event Action OnCoinCollected;
+    public void Collect()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("collected")
+        Destroy(gameObject);
+        OnCoinCollected?.Invoke();
     }
 }
