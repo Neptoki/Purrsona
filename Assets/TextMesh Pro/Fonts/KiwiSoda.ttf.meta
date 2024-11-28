@@ -3,7 +3,7 @@ guid: 10b9f01803dcdf24b85ef335d408f862
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
+  fontSize: 128
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
@@ -12,7 +12,7 @@ TrueTypeFontImporter:
   - KiwiSoda
   fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 0
+  fontRenderingMode: 2
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1
