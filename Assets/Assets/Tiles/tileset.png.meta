@@ -223,7 +223,7 @@ TextureImporter:
         width: 48
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,6 +231,27 @@ TextureImporter:
       bones: []
       spriteID: 50dbea6a6a1d5f741b317b2ccf9b66dd
       internalID: -373347458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassbouncy
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e484eb0aa15aeca48bd3fe63b8af63ee
+      internalID: -623207681
       vertices: []
       indices: 
       edges: []
@@ -247,6 +268,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       grass_0: -703934197
+      grassbouncy: -623207681
       grassfill_0: 542220976
       grassfill_1: 978122288
       island_0: 1388233590
