@@ -23,6 +23,30 @@ public class BulletScript : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rot + 90);
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+
+    {
+
+        if (other.CompareTag("Enemy"))
+
+        {
+
+            DestroyProjectile();
+
+        }
+
+    }
+
+
+
+    void DestroyProjectile()
+
+    {
+
+        Destroy(gameObject);
+
+    }
+
     // Update is called once per frame
     void Update()
     {
