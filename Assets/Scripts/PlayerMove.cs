@@ -26,6 +26,7 @@ public class PlayerMove : MonoBehaviour
     public float KBForce;
     public float KBTotalTime;
     public bool KnockFromRight; // direction player has been hit
+    public CoinManager cm; // cm = 'coin manager'
 
     // Start is called before the first frame update
     void Start()
@@ -158,6 +159,15 @@ public class PlayerMove : MonoBehaviour
             anim.ResetTrigger("specialIdle"); // trigger
             idleTime = 0f;
             isSpecialIdleTriggered = false;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++;
         }
     }
 }
