@@ -20,8 +20,8 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             health = 0;
-            Destroy(gameObject);
             GameOver();
+            Destroy(gameObject);
         }
     }
 
@@ -30,7 +30,6 @@ public class PlayerHealth : MonoBehaviour
         if (GameOverScreen != null)
         {
             GameOverScreen.Setup(true);
-
         }
     }
 }

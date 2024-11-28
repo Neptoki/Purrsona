@@ -18,7 +18,8 @@ public class GameOverScreen : MonoBehaviour
     {
         if (isGameOver)
         {
-            gameOverPanel.SetActive(true); 
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {
