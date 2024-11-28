@@ -244,7 +244,7 @@ TextureImporter:
         width: 32
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,6 +252,27 @@ TextureImporter:
       bones: []
       spriteID: e484eb0aa15aeca48bd3fe63b8af63ee
       internalID: -623207681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformdodgy
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 232
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb010c731f76d3408d1b99dd3a5528c
+      internalID: -731374053
       vertices: []
       indices: 
       edges: []
@@ -273,6 +294,7 @@ TextureImporter:
       grassfill_1: 978122288
       island_0: 1388233590
       island_1: -373347458
+      platformdodgy: -731374053
       rock_0: 1936486839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
