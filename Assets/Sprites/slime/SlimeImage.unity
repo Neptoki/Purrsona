@@ -2888,6 +2888,7 @@ GameObject:
   - component: {fileID: 1448579141}
   - component: {fileID: 1448579143}
   - component: {fileID: 1448579144}
+  - component: {fileID: 1448579145}
   m_Layer: 0
   m_Name: Slime Sprite
   m_TagString: Enemy
@@ -3033,6 +3034,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000068295245, y: -0.040828325}
   m_Size: {x: 0.12858711, y: 0.06858646}
   m_Direction: 1
+--- !u!114 &1448579145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448579137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ad358ffecee7b4aa89f0fdf0481436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!4 &1474515831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5889448270663599968, guid: 20579950104827c4faa715dce9b032cb, type: 3}
