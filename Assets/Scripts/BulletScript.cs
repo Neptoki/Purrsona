@@ -26,11 +26,11 @@ public class BulletScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
 
     {
+        DestroyProjectile();
 
         if (other.CompareTag("Enemy"))
 
         {
-
             DestroyProjectile();
 
         }
