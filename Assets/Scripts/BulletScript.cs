@@ -27,7 +27,7 @@ public class BulletScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
 
     {
-        if (other.CompareTag("Coin")) // ignores these to not get destroyed
+        if (other.CompareTag("Coin") || other.CompareTag("Heart")) // ignores these to not get destroyed
         {
             return;
         }

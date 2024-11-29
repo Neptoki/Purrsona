@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 9;
-    public int health;
+    public float maxHealth = 9;
+    public float health;
     public GameOverScreen GameOverScreen;
     public GameObject Heart;
     public GameObject Heart1;
