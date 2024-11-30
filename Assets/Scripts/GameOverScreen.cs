@@ -7,11 +7,14 @@ public class GameOverScreen : MonoBehaviour
 {
     public Text coinsText;
     public GameObject gameOverPanel;
+    public int coinCount;
+    public Text coinText;
+    public Text collectedText;
 
-    public void Setup (int coins)
+    public void Setup(int coins)
     {
         gameObject.SetActive(true);
-        coinsText.text = coins.ToString() + "MEW-NIES!";
+        coinsText.text = coins.ToString() + "meow-nies collected: ";
     }
 
     public void Setup(bool isGameOver)
@@ -25,5 +28,10 @@ public class GameOverScreen : MonoBehaviour
         {
             gameOverPanel.SetActive(false);
         }
+        
+    }
+    void Update()
+    {
+        collectedText.text = "meow-nies collected: " + coinCount.ToString();
     }
 }
