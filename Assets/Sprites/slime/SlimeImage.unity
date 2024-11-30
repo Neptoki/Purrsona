@@ -1714,11 +1714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d87f74bf95224469e1d68d240514d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsText: {fileID: 857740348}
   gameOverPanel: {fileID: 681099512}
   coinCount: 0
   coinText: {fileID: 857740348}
-  collectedText: {fileID: 857740348}
 --- !u!1 &717629762
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +4518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'meow-nies collected:'
+  m_Text: 'mew-nies collected:'
 --- !u!222 &1589801859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5681,7 +5679,7 @@ MonoBehaviour:
   coinCount: 0
   coinText: {fileID: 857740348}
   gameOverPanel: {fileID: 681099512}
-  collectedText: {fileID: 1589801858}
+  CollectedTxt: {fileID: 1589801858}
 --- !u!4 &1955672956
 Transform:
   m_ObjectHideFlags: 0

@@ -8,8 +8,7 @@ public class CoinManager : MonoBehaviour
     public int coinCount;
     public Text coinText;
     public GameObject gameOverPanel;
-    public Text collectedText;
-
+    public Text CollectedTxt;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +20,7 @@ public class CoinManager : MonoBehaviour
     void Update()
     {
         coinText.text = "Mew-nies: " + coinCount.ToString();
+        CollectedTxt.text = "mew-nies collected: " + coinCount.ToString();
     }
 
     public void Setup(bool isGameOver)
@@ -28,7 +28,7 @@ public class CoinManager : MonoBehaviour
         if (isGameOver)
         {
             gameOverPanel.SetActive(true);
-            collectedText.text = "meow-nies collected: " + coinCount.ToString();
+            CollectedTxt.text = "mew-nies collected: " + coinCount.ToString();
         }
         else
         {
