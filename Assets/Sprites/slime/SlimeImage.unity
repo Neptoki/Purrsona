@@ -5408,6 +5408,7 @@ GameObject:
   - component: {fileID: 1904872534}
   - component: {fileID: 1904872535}
   - component: {fileID: 1904872536}
+  - component: {fileID: 1904872538}
   m_Layer: 0
   m_Name: PlayerCat
   m_TagString: Player
@@ -5646,6 +5647,19 @@ MonoBehaviour:
   Heart6: {fileID: 1878712579}
   Heart7: {fileID: 1145087467}
   Heart8: {fileID: 266675762}
+--- !u!114 &1904872538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904872529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6443f1540a6e9bb43ad4b2fed74c65c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolvedAnim: {fileID: 22100000, guid: 964c919b6bba7754ba5cd129bfc3e3eb, type: 2}
 --- !u!1 &1912362825
 GameObject:
   m_ObjectHideFlags: 0
