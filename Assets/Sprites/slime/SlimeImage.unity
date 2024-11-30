@@ -1798,7 +1798,9 @@ MonoBehaviour:
   patrolDestination: 0
   playerTransform: {fileID: 1904872532}
   isChasing: 0
-  chaseDistance: 2
+  chaseDistance: 0
+  chaseWidth: 10
+  chaseHeight: 1.5
 --- !u!1 &731436314
 GameObject:
   m_ObjectHideFlags: 0

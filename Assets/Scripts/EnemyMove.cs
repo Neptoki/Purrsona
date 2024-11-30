@@ -10,6 +10,8 @@ public class EnemyMove : MonoBehaviour
     public Transform playerTransform; // helps communicate together
     public bool isChasing; // to keep track
     public float chaseDistance; // how close player is to trigger
+    public float chaseWidth; // wdith limimt
+    public float chaseHeight;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,16 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+        if (Mathf.Abs(transform.position.x - playerTransform.position.x) <= chaseWidth && Mathf.Abs(transform.position.y - playerTransform.position.y) <= chaseHeight)
+        {
+            isChasing = true;
+        }
+        else if (distanceToPlayer > chaseDistance)
+        {
+            isChasing = false; // stops chasing if player is beyond
+        }
+
         if (isChasing)
         {
             if (transform.position.x > playerTransform.position.x) // if player is left
@@ -61,7 +73,5 @@ public class EnemyMove : MonoBehaviour
                 }
             }
         }
-
-        
     }
 }
