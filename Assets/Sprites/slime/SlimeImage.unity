@@ -4373,6 +4373,7 @@ GameObject:
   - component: {fileID: 1448579141}
   - component: {fileID: 1448579143}
   - component: {fileID: 1448579144}
+  - component: {fileID: 1448579146}
   - component: {fileID: 1448579145}
   m_Layer: 0
   m_Name: Slime Sprite
@@ -4534,6 +4535,21 @@ MonoBehaviour:
   maxHealth: 3
   health: 3
   Healthbar: {fileID: 1136620309}
+  flashEffect: {fileID: 1448579146}
+--- !u!114 &1448579146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448579137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e3e937ae2b5484d89b542d19648151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 64e06ec40cc6aca41ac71271ee82e3f2, type: 2}
+  duration: 0.125
 --- !u!4 &1474515831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5889448270663599968, guid: 20579950104827c4faa715dce9b032cb, type: 3}
@@ -6093,6 +6109,7 @@ GameObject:
   - component: {fileID: 1904872535}
   - component: {fileID: 1904872536}
   - component: {fileID: 1904872538}
+  - component: {fileID: 1904872539}
   m_Layer: 0
   m_Name: PlayerCat
   m_TagString: Player
@@ -6340,6 +6357,7 @@ MonoBehaviour:
   Heart15: {fileID: 1690059282}
   Heart16: {fileID: 1664678809}
   Heart17: {fileID: 628363479}
+  flashEffect: {fileID: 1904872539}
 --- !u!114 &1904872538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6353,6 +6371,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evolvedAnim: {fileID: 22100000, guid: 964c919b6bba7754ba5cd129bfc3e3eb, type: 2}
+--- !u!114 &1904872539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904872529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e3e937ae2b5484d89b542d19648151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 0dc5774336c7b594884ee33fa49b8e9b, type: 2}
+  duration: 0.125
 --- !u!1 &1912362825
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject Heart15;
     public GameObject Heart16;
     public GameObject Heart17;
+    [SerializeField] private SimpleFlash flashEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        flashEffect.Flash();
         if(health <= 0)
         {
             health = 0;

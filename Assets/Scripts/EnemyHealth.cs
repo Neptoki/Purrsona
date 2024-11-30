@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 3; // enemy health
     public float health;
     public EnemyHealthbar Healthbar; // ref to health bar UI
+    [SerializeField] private SimpleFlash flashEffect;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damageAmount) // reduces enemy health
     {
         health -= damageAmount;
+        flashEffect.Flash();
         Healthbar.SetHealth(health, maxHealth);
         if (health <= 0)
         {
