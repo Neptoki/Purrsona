@@ -16,6 +16,15 @@ public class PlayerHealth : MonoBehaviour
     public GameObject Heart6;
     public GameObject Heart7;
     public GameObject Heart8;
+    public GameObject Heart9;
+    public GameObject Heart10;
+    public GameObject Heart11;
+    public GameObject Heart12;
+    public GameObject Heart13;
+    public GameObject Heart14;
+    public GameObject Heart15;
+    public GameObject Heart16;
+    public GameObject Heart17;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +66,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 1:
@@ -70,6 +88,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 2:
@@ -83,6 +110,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 3:
@@ -96,6 +132,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 4:
@@ -109,6 +154,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 5:
@@ -122,6 +176,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 6:
@@ -135,6 +198,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(false);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 7:
@@ -148,6 +220,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(true);
                     Heart7.gameObject.SetActive(false);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 8:
@@ -161,6 +242,15 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(true);
                     Heart7.gameObject.SetActive(true);
                     Heart8.gameObject.SetActive(false);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
                     break;
                 }
             case 9:
@@ -174,6 +264,213 @@ public class PlayerHealth : MonoBehaviour
                     Heart6.gameObject.SetActive(true);
                     Heart7.gameObject.SetActive(true);
                     Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(false);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 10:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(false);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 11:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(false);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 12:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(false);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 13:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(false);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 14:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(true);
+                    Heart14.gameObject.SetActive(false);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 15:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(true);
+                    Heart14.gameObject.SetActive(true);
+                    Heart15.gameObject.SetActive(false);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 16:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(true);
+                    Heart14.gameObject.SetActive(true);
+                    Heart15.gameObject.SetActive(true);
+                    Heart16.gameObject.SetActive(false);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 17:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(true);
+                    Heart14.gameObject.SetActive(true);
+                    Heart15.gameObject.SetActive(true);
+                    Heart16.gameObject.SetActive(true);
+                    Heart17.gameObject.SetActive(false);
+                    break;
+                }
+            case 18:
+                {
+                    Heart.gameObject.SetActive(true);
+                    Heart1.gameObject.SetActive(true);
+                    Heart2.gameObject.SetActive(true);
+                    Heart3.gameObject.SetActive(true);
+                    Heart4.gameObject.SetActive(true);
+                    Heart5.gameObject.SetActive(true);
+                    Heart6.gameObject.SetActive(true);
+                    Heart7.gameObject.SetActive(true);
+                    Heart8.gameObject.SetActive(true);
+                    Heart9.gameObject.SetActive(true);
+                    Heart10.gameObject.SetActive(true);
+                    Heart11.gameObject.SetActive(true);
+                    Heart12.gameObject.SetActive(true);
+                    Heart13.gameObject.SetActive(true);
+                    Heart14.gameObject.SetActive(true);
+                    Heart15.gameObject.SetActive(true);
+                    Heart16.gameObject.SetActive(true);
+                    Heart17.gameObject.SetActive(true);
                     break;
                 }
         }
