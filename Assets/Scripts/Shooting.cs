@@ -10,7 +10,8 @@ public class Shooting : MonoBehaviour
     public Transform bulletTransform;
     public bool canFire;
     private float timer;
-    public float timeBetweenFiring;
+    public float timeBetweenFiring; // default value
+    BulletScript force;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class Shooting : MonoBehaviour
         if (!canFire)
         {
             timer += Time.deltaTime;
-            if(timer > timeBetweenFiring)
+            if (timer > timeBetweenFiring)
             {
                 canFire = true;
                 timer = 0;
@@ -42,6 +43,5 @@ public class Shooting : MonoBehaviour
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
-
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Coin
   - Heart
+  - Star
+  - Bullet
   layers:
   - Default
   - TransparentFX

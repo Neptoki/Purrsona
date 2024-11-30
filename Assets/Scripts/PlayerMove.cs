@@ -169,5 +169,10 @@ public class PlayerMove : MonoBehaviour
             Destroy(other.gameObject);
             cm.coinCount++;
         }
+        if (other.gameObject.CompareTag("Star"))
+        {
+            Destroy(other.gameObject);
+            speed *= 1.5f;
+        }
     }
 }

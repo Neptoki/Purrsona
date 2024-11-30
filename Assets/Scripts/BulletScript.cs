@@ -27,10 +27,11 @@ public class BulletScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
 
     {
-        if (other.CompareTag("Coin") || other.CompareTag("Heart")) // ignores these to not get destroyed
+        if (other.CompareTag("Coin") || other.CompareTag("Heart") || other.CompareTag("Bullet") || other.CompareTag("Player") || other.CompareTag("Star")) // ignores these to not get destroyed
         {
             return;
         }
+
         DestroyProjectile();
         if (other.CompareTag("Enemy"))
         {
@@ -45,6 +46,7 @@ public class BulletScript : MonoBehaviour
         {
             DestroyProjectile();
         }
+
     }
 
     void DestroyProjectile()
@@ -53,11 +55,5 @@ public class BulletScript : MonoBehaviour
 
         Destroy(gameObject);
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

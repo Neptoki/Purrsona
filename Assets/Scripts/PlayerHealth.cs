@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 9;
+    public float maxHealth = 9f;
     public float health;
     public GameOverScreen GameOverScreen;
     public GameObject Heart;
@@ -176,6 +176,16 @@ public class PlayerHealth : MonoBehaviour
                     Heart8.gameObject.SetActive(true);
                     break;
                 }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Star"))
+        {
+            Destroy(other.gameObject);
+            maxHealth *= 2;
+            health += 9f;
         }
     }
 }
