@@ -232,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 4348583920276530271}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 0.31, z: 0}
+  m_LocalPosition: {x: 0, y: 0.136, z: 0}
   m_LocalScale: {x: 7.13, y: 7.13, z: 7.13}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -670,7 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6094199315888691918}
   - component: {fileID: 1609335770464273063}
-  - component: {fileID: 6745417085588837155}
+  - component: {fileID: 649731210857438172}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Weak Point
@@ -722,7 +722,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6745417085588837155
+--- !u!114 &649731210857438172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
